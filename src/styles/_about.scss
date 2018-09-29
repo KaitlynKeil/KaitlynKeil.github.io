@@ -9,6 +9,11 @@
 
 .tech {
   margin: 10px;
+  li {
+    color: $main;
+    font-size: 1.1rem;
+    text-align: left;
+  }
 }
 
 .user {

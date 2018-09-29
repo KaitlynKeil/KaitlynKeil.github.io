@@ -1,0 +1,26 @@
+<div class="topnav" id="myTopnav">
+	<a href="/">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn">Things I've Done
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<a href="/chefs-touch.html">Chef's Touch</a>
+			<a href="/checkmait.html">checkmAIt</a>
+			<a href="/adaptive-sailing.html">Universal Team Sailing</a>
+			<a href="/smaller-projects.html">Smaller Projects</a>
+		</div>
+	</div>
+	<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="toMenuIcon()">&#9776;</a>
+</div>
+
+<script>
+	function toMenuIcon() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+	}
+</script>

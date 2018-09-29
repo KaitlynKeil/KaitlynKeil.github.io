@@ -29,10 +29,56 @@
   }
 }
 
+.lessons {
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  p {
+    font-size: 16px;
+  }
+  @media only screen and (min-width: $cut) {
+    flex-wrap: nowrap;
+    font-size: 75px;
+  }
+}
+
+.half-page-left {
+  margin-left: 0;
+  width: 48%;
+  li {
+    color: $main;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+}
+
+.half-page-right {
+  float: right;
+  margin-left: 0;
+  width: 48%;
+  li {
+    color: $main;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+}
+
 .contents {
   @media only screen and (min-width: $cut) {
     margin-left: 0;
+    float: left;
     width: 48%;
+  }
+}
+
+.contents-full {
+  @media only screen and (min-width: $cut) {
+    margin-left: 5%;
+    width: 90%;
   }
 }
 
@@ -43,6 +89,25 @@
     width: 48%;
   }
 }
+
+.images-main {
+  @media only screen and (min-width: $cut) {
+    margin: auto;
+    width: 90%;
+  }
+  img {
+    @media only screen and (min-width: $cut) {
+      float: center;
+    }
+  }
+  video {
+    @media only screen and (min-width: $cut) {
+      width: 90%;
+      margin: auto;
+    }
+  }
+}
+
 .images-right {
   @media only screen and (min-width: $cut) {
     float: right;
@@ -70,6 +135,44 @@
 .project-link {
   display: block;
   width: 100px;
+  margin: 10px 0px;
+  padding: 5px;
+  color: $main;
+  background-color: transparent;
+  border: 1px solid $main;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+  &:hover {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
+  &:active {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
+}
+
+.links {
+  text-align: center;
+}
+
+.site-link {
+  display: inline-block;
+  width: 200px;
   margin: 10px 0px;
   padding: 5px;
   color: $main;

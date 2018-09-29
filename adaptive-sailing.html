@@ -1,0 +1,52 @@
+---
+title: Universal Team Sailing Project Page
+layout: project-page
+project-name: Autonomous Sailing for Blind Sailors
+---
+
+<div class="user-projects">
+	<div class="images-main">
+    	<img alt="Picture of several small sailing boats, with the words Olin Adaptive Sailing" src="{{ "/assets/img/OlinSailing.png" | prepend: site.baseurl }}" />
+    </div>
+  </div>
+  <div class="user-projects">
+    <div class="images-right">
+      <br>
+      <br>
+      <br>
+    	<img alt="Three students, including Kaitlyn, gathered around a white board discussing options" src="{{ "/assets/img/brainstorming.jpg" | prepend: site.baseurl }}" />
+    </div>
+  <div class="contents">
+  	<h2> Context </h2>
+  	<p> At Olin College of Engineering, students often spend a summer doing research with one or more faculty members. After my first year, I worked on a team of four (myself, two other first years, and a sophomore) and with three faculty members to develop a system to help blind sailors compete in match races, where two boats compete one-on-one.</p>
+    <p> Before our project, the standard for blind sailors competing in this type of race was the Homerus System. This was a purely sound-based system that relied on five separate sirens to help the sailors navigate the course. Naturally, this was overwhelming and unpleasant to work with. Our goal was to take the idea behind the Homerus System—allowing sailors to compete without a sighted guide—and update it to be a better interface. </p>
+    <p> This was the third summer of the project, and as such, we had partners who were members of the strong blind sailing community in the Boston area. We co-designed and tested alongside these partners to make sure we were creating something useful.</p>
+    <p> My research for this project was sponsored by the Clare Boothe Luce Fellowship, and as such, I worked on it over the course of the following year and presented at a conference the next summer.</p>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="contents-full">
+  	<h2> Project Outcome </h2>
+  	<p> We integrated GPS, a custom tack sensor, and a Raspberry Pi in order to create a system that could keep track of the course shape and the location of the other boat with enough accuracy to verbally inform the sailors of the location and tack of the other boat, as well as the information they needed to navigate the race. This system fit within a small, waterproof box (as displayed below), so that it could easily be customized for individual boats and set up without any extra specialized equipment. The two Raspberry Pis (one for each boat) communicated via an ad-hoc network connection. While it was still rough by the end of the summer, the core integration and technology was used as a base for on-going work. It is currently being reviewed by officials for use in international racing competitions.</p>
+    <p> I submitted a paper and presented my findings at the Oceans' 17/MTS/IEEE Aberdeen Conference in June, 2017.</p>
+  </div>
+  <div class="images-main">
+      <img alt="A picture of the system, unpacked from the box. A keypad, a speaker, and a GPS antenna are on display." src="{{ "/assets/img/adapt-sail-system.jpg" | prepend: site.baseurl }}" />
+    </div>
+</div>
+<div class="user-projects">
+  <div class="contents-full">
+  	<h2> My Role </h2>
+  	<p> My teammates and I split work evenly on this project, and often switched between tasks in order to learn the most we could. A few aspects that I took ownership of were the menu navigation (for which we used a keypad that could be strapped to a leg), the speech response, and network communication.</p>
+  </div>
+</div>
+<div class="lessons">
+  <div class="half-page-left">
+    <h2> Primary Technologies </h2>
+    <p> This project was written in Python. We used a Raspberry Pi's inputs to process data from the tack sensor and the GPS, and an ad-hoc network to communicate between Raspberry Pis.</p>
+  </div>
+  <div class="half-page-right">
+  	<h2> Take-Aways </h2>
+  	<p>This project allowed me to explore software more thoroughly, introduced me to adaptive technology and user-centered design, and strengthened my teaming skills, as our team was essentially seven members strong. </p>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+---
+title: checkmAIt Project Page
+layout: project-page
+project-name: checkmAIt
+git-link: https://github.com/NickShermeister/checkmAIt/
+---
+
+<div class="user-projects">
+	<div class="images-main">
+    <iframe src="https://drive.google.com/file/d/1sTJLKcGAQzoZkU0r0hVnF0yhEdjaIyNo/preview" width="640" height="480"></iframe>
+  </div>
+    <br>
+    <br>
+</div>
+<div class="user-projects">
+    <div class="images-left">
+    <br>
+      <img alt="A picture of the first draft of the chess board, with Wizard's Chess on the side." src="{{ "/assets/img/wizards-chess-hack.jpg" | prepend: site.baseurl }}"/>
+  </div>
+  <div class="contents-right">
+  	<h2> Context </h2>
+  	<p> Wizard's Chess was an idea born from HackHolyoke 2017, where I worked with another junior, and sophomore, and a first year in order to create a voice-controlled chess board with a Lego arm that moved the pieces, which is shown to the left. After the questionable success of the first 24 hour iteration (callibration is key), we decided to undertake the project again on a longer context. Over the course of the next semester (Spring 2018), we devoted a portion of our free time into making a cleaner version, to show at the end of the year exposition.</p>
+  </div>
+  </div>
+<div class="user-projects">
+  <div class="contents-full">
+  	<h2> Project Outcome </h2>
+  	<p> During exposition, we were able to demonstrate the project as seen above. Voice activation did not work due to the crowded environment; however, we were able to move pieces out of the way to allow for any move, capture pieces and place them in a graveyard, and reset the board. The AI would respond with a move to any play by the humans, and if put on a different setting, the game would play itself for a while. Callibration continued to be an issue with our tokens (changed from chess pieces for enhanced stability), so at times it was difficult to see exactly where the pieces were meant to be; it was still a delight for those involved.</p>
+  </div>
+  <div class="contents">
+    <h2> My Role </h2>
+    <p> I took many roles during this project. For software, I was in charge of routing pieces in the easiest way (a weighted shortest path, with other pieces factoring in as moveable obstacles), putting pieces back into place if they had to be moved out of the way, and keeping track of the board state. I also did some last minute work on speech control with Google Cloud Speech.</p>
+    <p> My other role was general hardware help. I was head of creating the tokens and helped assemble the gantry, as well as whatever other tasks came up that had to be done.</p>
+  </div>
+  <div class="images-right">
+    <img alt="A group of students standing behind a chess board with tokens as pieces." src="{{ "/assets/img/wizards-chess-final.jpg" | prepend: site.baseurl }}" />
+  </div>
+</div>
+<div class="lessons">
+  <div class="half-page-left">
+    <h2> Primary Technologies </h2>
+    <p> This project was written in Python, communicating with an Arduino for the servos. We used Stockfish as the AI opponent and Google Cloud Speech to pick up voice commands. A number of libraries were used for the software side, such as <a href="https://networkx.github.io/">networkx</a>.</p>
+  </div>
+  <div class="half-page-right">
+  	<h2> Take-Aways </h2>
+  	<p> Integrate often so you can see the flaws. We waited a bit too long for our final physical construction, and thus ran into some debugging at the very end, while we were presenting. This could have been fixed by having earlier prototypes as we went along. Also, look for suitable libraries. Having the routing algorithm of networkx saved us a lot of time, which we could then devote to unique problems instead of solving already-fixed issues.</p>
+  </div>
+</div>
