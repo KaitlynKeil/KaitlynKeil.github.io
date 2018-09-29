@@ -1,6 +1,7 @@
 # Site settings
 title: Kaitlyn Keil's Portfolio
 description: Kaitlyn Keil's portfolio of projects
+future: true
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
